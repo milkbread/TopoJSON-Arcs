@@ -11,6 +11,12 @@ git clone https://github.com/milkbread/TopoJSON-Arcs.git
 
 Exemplary Python-Code:
 
+* Import the Python-classes
+
+	```Python
+	import topojson_rk as topojson
+	```
+
 * Open a TopoJSON-file & get the arcs and objects
 
 	```Python
