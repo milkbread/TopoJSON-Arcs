@@ -9,7 +9,7 @@ Download the repository:
 git clone https://github.com/milkbread/TopoJSON-Arcs.git
 ```
 
-Exemplary Python-Code:
+[Exemplary Python-Code](run_example.py):
 
 * Import the Python-classes
 
