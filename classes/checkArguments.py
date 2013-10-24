@@ -1,6 +1,12 @@
 #!/usr/bin/env python
+#Python-functions that help to evaluate the input from command line
+#written by Ralf Klammer, 24.10.2013
+
 import getopt
 import sys
+
+def version():
+	return 0.2
 
 def getIOFiles(): 
 	inputfile = ''
