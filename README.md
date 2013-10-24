@@ -56,7 +56,7 @@ Automatic Execution using [makeGeoJSON.py](makeGeoJSON.py):
 
 When you look into the [specification](https://github.com/topojson/topojson-specification/blob/master/README.md), you'll notice, that a TopoJSON-file can contain one or more different original GeoJSON-files.
 That is why you have to specify, which one you want to use. Normally, this 'name' corresponds with the original filename.
-In the example we want to re-build the GeoJSON-Features 'vg250_bld' because the original GeoJSON-file was called 'vg250_bld.json'!
+In the example we want to re-build the GeoJSON-File of the Feature 'vg250_bld' because the original GeoJSON-file was called 'vg250_bld.json'!
 
 Other Python-Approaches:
 
