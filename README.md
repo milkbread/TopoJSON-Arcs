@@ -38,3 +38,8 @@ Exemplary Python-Code:
 	topojson.saveGeoJSON(geoJSON, 'result.geojson')
 	```
 
+Other Python-Approaches:
+
+* complete library: https://github.com/calvinmetcalf/topojson.py
+* examples: http://sgillies.net/blog/1159/topojson-with-python/
+
