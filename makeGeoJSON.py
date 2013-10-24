@@ -5,10 +5,16 @@
 #manipulating the single arc-geometries and use them directly to build the GeoJSON-features
 
 import json
+import os
+import subprocess
+import time
+from classes import checkArguments as check
 import topojson_rk as topojson
 
+input, output, feature = check.getIOFilesObject();
+
 #topology = topojson.openTopoJSON('https://gist.github.com/milkbread/5957651/raw/81e3b548ab7873f3f80829e918ac5bd0da083a72/vg250_bld_krs_topo.json')
-topology = topojson.openJSON('data/vg250_bld_krs_topo.json')
+topology = topojson.openJSON(input)
 arcs = topology['arcs']
 objects = topology['objects']
 
@@ -17,6 +23,5 @@ arcGeometries = topoTrans.getArcGeometries(arcs)
 
 topoGeomBuilder = topojson.BuildGeometries(arcGeometries)
 
-geoJSON = topoGeomBuilder.buildFeatures(objects['vg250_bld']['geometries'])
-topojson.saveGeoJSON(geoJSON, 'result.geojson')
-
+geoJSON = topoGeomBuilder.buildFeatures(objects[feature]['geometries'])
+topojson.saveGeoJSON(geoJSON, output)

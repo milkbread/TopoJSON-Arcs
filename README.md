@@ -38,6 +38,25 @@ Exemplary Python-Code:
 	topojson.saveGeoJSON(geoJSON, 'result.geojson')
 	```
 
+Automatic Execution using [makeGeoJSON.py](makeGeoJSON.py):
+
+* Dummy
+
+	```sh
+	python makeGeoJSON.py -i <inputfile> -o <outputfile> -f <TopoJSON-Feature>
+	```
+
+* Example
+
+	```sh
+	python makeGeoJSON.py -i data/vg250_bld_krs_topo.json -o result.geojson -f 'vg250_bld'
+	```
+
+*What is a 'TopoJSON-Feature???'*
+When you look into the [specification](https://github.com/topojson/topojson-specification/blob/master/README.md), you'll notice, that a TopoJSON-file can contain one or more different original GeoJSON-files.
+That is why you have to specify, which one you want to use. Normally, this 'name' corresponds with the original filename.
+In the example we want to re-build the GeoJSON-Features 'vg250_bld' because the original GeoJSON-file was called 'vg250_bld.json'!
+
 Other Python-Approaches:
 
 * complete library: https://github.com/calvinmetcalf/topojson.py
